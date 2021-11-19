@@ -1,6 +1,6 @@
 function setup() {
   createCanvas (windowWidth, windowHeight);// window that adjusts cnavsa
-  background (167,255,221);
+  background (207,238,250);
 }
 
 function draw() {
