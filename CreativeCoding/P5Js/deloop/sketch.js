@@ -23,19 +23,7 @@ function draw() {
 
     for ( var x= 0; x <600; x = x+ 300)//row across x
     image (img, x,y);
-
-
-
-
-
-
-
-  }
-
-
-
 }
-
-
-  noLoop();
+}
+noLoop();
 }
