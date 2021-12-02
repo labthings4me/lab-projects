@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background ('yellow');
+  background (220);
 
   translate (60,60);
 
