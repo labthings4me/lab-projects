@@ -6,7 +6,7 @@ function preload () {
 
 
 function setup() {
-  createCanvas(windowWidth, windowWidth);
+  createCanvas(720, 720);
   fill(207, 238, 250);
   strokeWeight(0);
 }
@@ -17,13 +17,11 @@ function draw() {
   translate (60,60);
 
 
- var num = 2 ;
-  var sideLen = windowWidth/num // x length
 
 
-  for ( var y= 0; y < windowWidth; y = y+ sideLen) {
+  for ( var y= 0; y < 600; y = y+ 300) {
 
-    for ( var x= 0; x <windowWidth; x = x+ sideLen)//row across x
+    for ( var x= 0; x <600; x = x+ 300)//row across x
     image (img, x,y);
 
 
