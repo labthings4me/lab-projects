@@ -7,7 +7,7 @@ function preload () {
 
 function setup() {
   createCanvas(720, 720);
-  fill(207, 238, 250);
+  fill("black");
   strokeWeight(0);
 }
 
@@ -24,6 +24,6 @@ function draw() {
     for ( var x= 0; x <600; x = x+ 300)//row across x
     image (img, x,y);
 }
-}
+
 noLoop();
 }
