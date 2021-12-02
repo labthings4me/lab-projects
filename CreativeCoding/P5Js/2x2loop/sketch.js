@@ -1,25 +1,26 @@
-function setup() {
-  createCanvas(windowWidth, windowWidth);
-  fill(207, 238, 250);
-  strokeWeight(1);
+let img;
+
+function preload () {
+  img = loadimage ('assets/newmoby.png');
 }
+
+
+
+function setup() 
 
 function draw() {
 
 
- var num = 2 ;
+
+ var num = 10 ;
   var sideLen = windowWidth/num // x length
 
 
-  for ( var y= 0; y < windowWidth; y = y+ sideLen) {
+  for ( var y= 0; y < windowHe; y = y+ sideLen) {
 
     for ( var x= 0; x <windowWidth; x = x+ sideLen)//row across x
   {
-   quad (x, y,
-        x + sideLen, y,
-        x + sideLen, y + sideLen,
-        x , y + sideLen);
-
+   image (img, x,y);
 
 
 
@@ -30,7 +31,9 @@ function draw() {
 
 
 }
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
   noLoop();
 }
