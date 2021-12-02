@@ -1,7 +1,7 @@
 let img;
 
 function preload () {
-  img = loadImage ('assets/lizardnew.png');
+  img = loadImage ('assets/moby1.png');
 }
 
 function setup() {
