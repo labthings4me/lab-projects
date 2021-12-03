@@ -4,17 +4,14 @@ function preload (){
   boat = loadImage ('boat.png');
   map = loadImage ('map.png');
   lizard = loadImage ('lizard.png');
-  palm = loadImage ('palm.png');
   moby = loadImage ('moby.png');
-  crest = loadImage ('crest.png')
-  flower = loadImage ('flower.png')
-  fish = loadImage ('fish.png')
+  fish = loadImage ('fish.png');
   
 }
   function setup() {
     createCanvas(windowWidth, windowHeight);
     frameRate (0.5);
-    fill(207, 238, 250);
+    fill("black");
     noStroke ();
   }
   
@@ -36,8 +33,9 @@ function draw() {
         x + sideLen, y + sideLen, 
         x , y + sideLen);
     
-    var pics = [boat,map, lizard, palm, moby,crest,flower];
-    image (pics [int (random (0,8))], x,y);
+    var pics = [boat,map, lizard,moby,fish];
+    image (pics [int (random (0,5
+                             ))], x,y);
     
    
     }     
