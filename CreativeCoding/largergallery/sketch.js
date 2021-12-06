@@ -1,7 +1,7 @@
 let img;
 
 function preload (){
-img = loadImage ('LGallery.gif');
+img = loadImage ('BrighterGallery.gif');
 }
 
 
@@ -9,7 +9,7 @@ img = loadImage ('LGallery.gif');
 
 function setup() {
   createCanvas(windowWidth, windowWidth);
-fill ('yellow');
+fill ('black');
 
 
 
@@ -25,13 +25,14 @@ var sideLen = windowWidth/num
   for (var x = 0; x < windowWidth; x = x+sideLen) {
 
 
-  ;
+  quad (x, y,
+    x+sideLen, y,
+    x +sideLen, y+sideLen,
+    x, y+sideLen);
 
    image (img, 200, 300
          );
   }
-  function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 
 
 
