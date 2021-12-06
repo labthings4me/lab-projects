@@ -30,7 +30,7 @@ var sideLen = windowWidth/num
     x +sideLen, y+sideLen,
     x, y+sideLen);
 
-   image (img, 200, 300
+   image (img, 100, 100
          );
   }
 
