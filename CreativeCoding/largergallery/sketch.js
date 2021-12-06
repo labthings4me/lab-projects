@@ -1,7 +1,7 @@
 let img;
 
 function preload (){
-img = loadImage ('BrighterGallery.gif');
+img = loadImage ('newHomeGallery.gif');
 }
 
 
