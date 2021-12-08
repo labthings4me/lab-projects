@@ -8,16 +8,16 @@ function preload (){
 
 function setup() { //runs once
   createCanvas(windowWidth, windowHeight);
-  fill('indigo');
+  fill(206,250.5);
   strokeWeight(1);
 }
 
 function draw() {
-background (255);
+background (206,250,5);
 
 translate(-100, -100)
 
-var num = 10; //variable for the number of squares in the array
+var num = 8; //variable for the number of squares in the array
 var sideLen = windowWidth/num;//variable for the side lenth of each square
 
   for (var y = 0; y < 2*windowHeight; y = y + sideLen) {//loop to create rows in the y direction
