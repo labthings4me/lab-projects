@@ -2,7 +2,7 @@
 let gif;
 
 function preload (){
-  gif = loadImage ('cryptoselfiecode1.gif');
+  gif = loadImage ('cryptoselfielg.gif');
 }
 
 function setup() { //runs once
@@ -16,7 +16,7 @@ background (65,101.176);
 
 translate(-100, -100)
 
-var num = 6; //variable for the number of squares in the array
+var num = 4; //variable for the number of squares in the array
 var sideLen = windowWidth/num;//variable for the side lenth of each square
 
   for (var y = 0; y < 2*windowHeight; y = y + sideLen) {//loop to create rows in the y direction
