@@ -1,24 +1,18 @@
-let pics;
+
 
 function preload (){
-bermudiana= loadImage ('/movinglizard/bermudiana.png');
-hat = loadImage ('/movinglizard/hat.png');
-lizard= loadImage ('/movinglizard/lizard.png');
-
-
-
+  bermudiana = loadImage ('bermudiana.png');
+  hat = loadImage ('hat.png');
+  lizard = loadImage ('lizard.png');
 
 }
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    frameRate (0.5);
+    fill("white");
+    noStroke ();
+  }
 
-
-function setup() {
-  createCanvas(windowWidth, windowWidth);
-   frameRate (0.5);
-  noFill ;
-  noStroke();
-
-
-}
 
 function draw() {
 
@@ -37,8 +31,8 @@ function draw() {
         x + sideLen, y + sideLen,
         x , y + sideLen);
 
-    var pics = [bermudiana,hat, lizard,];
-    image (pics [int (random (0,4
+    var pics = [bermudiana,hat, lizard];
+    image (pics [int (random (0,3
                              ))], x,y);
 
 
